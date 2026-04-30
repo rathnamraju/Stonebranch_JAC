@@ -38,7 +38,7 @@
   "exclusiveTasks": [],
   "exclusiveWithSelf": false,
   "executionRestriction": "None",
-  "exportReleaseLevel": "7.9.3.1",
+  "exportReleaseLevel": "7.9.2.0",
   "exportTable": "ops_task_workflow",
   "firstRun": "",
   "holdResources": false,
@@ -67,9 +67,7 @@
   "name": "WF_003_AX-Geac-Inbound_${TRDATE}",
   "notes": [],
   "numberOfTasks": 0,
-  "opswiseGroups": [
-    "LMI Technology Operations"
-  ],
+  "opswiseGroups": [],
   "overrideCalendar": false,
   "overrideInstanceWait": "No",
   "resPriority": 10,
