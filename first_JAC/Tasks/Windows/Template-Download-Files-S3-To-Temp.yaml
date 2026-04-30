@@ -143,7 +143,7 @@ notes:
             </Variable>
             <Variable t="1" typeid="Variable">
                 <Name>$ImportedSymbols</Name>
-                <Value>AWS_SCD_BUCKET_ACCESS_KEY;AWS_SCD_BUCKET_SECRET_KEY;AWS_SPE_IMPAIRMENTSTUDIO_ACCESS_KEY;AWS_SPE_IMPAIRMENTSTUDIO_SECRET_KEY;AWS_DP_B2B_BUCKET_ACCESS_KEY;AWS_DP_B2B_BUCKET_SECRET_KEY;AWS_BUCKET_ACCESS_KEY;AWS_BUCKET_SECRET_KEY;AWS_BUCKET_REGION;AWS_BUCKET_NAME;AWS_Bucket_Directory;Server_Root;Temp_Folder_Location;File_Pattern</Value>
+                <Value>AWS_SPE_IMPAIRMENTSTUDIO_ACCESS_KEY;AWS_SPE_IMPAIRMENTSTUDIO_SECRET_KEY;AWS_DP_B2B_BUCKET_ACCESS_KEY;AWS_DP_B2B_BUCKET_SECRET_KEY;AWS_BUCKET_ACCESS_KEY;AWS_BUCKET_SECRET_KEY;AWS_BUCKET_REGION;AWS_BUCKET_NAME;AWS_Bucket_Directory;Server_Root;Temp_Folder_Location;File_Pattern</Value>
             </Variable>
             <Variable t="12" typeid="Variable">
                 <Name>Execution</Name>
