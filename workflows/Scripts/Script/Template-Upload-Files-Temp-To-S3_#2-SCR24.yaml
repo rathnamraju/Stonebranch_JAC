@@ -1,0 +1,20 @@
+content: |-
+  @Echo off
+  SET aws_access_key_id=${AWS_SCD_BUCKET_ACCESS_KEY}
+  SET aws_secret_access_key=${AWS_SCD_BUCKET_SECRET_KEY}
+  SET region=${AWS_SCD_BUCKET_REGION}
+  SET output text
+  @echo ON
+
+  aws s3 mv ${in_file_location} s3://${AWS_SCD_BUCKET_NAME}${S3_Subfolder} --recursive
+description:
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: Template-Upload-Files-Temp-To-S3_#2-SCR24
+scriptType: Script
+sysId: 6b553f6aed313d06871429843404db4b
+version: 1
