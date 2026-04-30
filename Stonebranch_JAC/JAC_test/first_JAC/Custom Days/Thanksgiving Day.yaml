@@ -1,0 +1,23 @@
+adjustment: None
+adjustmentAmount: 1
+adjustmentType: Day
+category: Holiday
+comments: 4th Thursday of November
+ctype: Relative Repeating Date
+date:
+dateList: []
+day: 1
+dayofweek: Thu
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_custom_day
+holiday: true
+month: Nov
+name: Thanksgiving Day
+nthAmount: 1
+nthType: Day
+observedRules: []
+period: false
+relfreq: 4th
+retainSysIds: true
+sysId: 02ffcce5a6e73ffc8541e094e6412c39
+version: 1

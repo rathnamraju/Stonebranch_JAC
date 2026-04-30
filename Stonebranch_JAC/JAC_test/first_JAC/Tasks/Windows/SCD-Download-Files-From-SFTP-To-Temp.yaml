@@ -1,0 +1,1723 @@
+type: taskWindows
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent:
+agentCluster:
+agentClusterVar:
+agentVar: ${Cloud_Gen_Que}
+broadcastCluster:
+broadcastClusterVar:
+command:
+commandOrScript: Script
+cpDuration:
+cpDurationUnit: Minutes
+createConsole: false
+credentials: lm\sainvpSimcorp
+credentialsVar:
+customChoiceField1:
+  label:
+  value:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_task_windows
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: SCD-Download-Files-From-SFTP-To-Temp
+notes:
+- sysId: 003bf92d76bc4ce6904a9a44037b2542
+  text: |-
+    <Object typeid="Job">
+        <ID>1549507</ID>
+        <RID>4</RID>
+        <ClassID>3</ClassID>
+        <Label>SCD-Download-Files-From-SFTP-To-Temp</Label>
+        <Name>SCD-Download-Files-From-SFTP-To-Temp</Name>
+        <PID typeid="ObjectID">
+            <ID>1549471</ID>
+        </PID>
+        <Enabled>1</Enabled>
+        <GlobalDisable>0</GlobalDisable>
+        <Visibility>127</Visibility>
+        <Owner>LM\a1520465</Owner>
+        <Flags>8</Flags>
+        <Status>0</Status>
+        <OperationDateTime>0001-01-01T00:00:00</OperationDateTime>
+        <LockIsExclusive>0</LockIsExclusive>
+        <LockMode>0</LockMode>
+        <LockOperation>0</LockOperation>
+        <LockOwner/>
+        <LockFlags/>
+        <Guid>0989d70c-c827-4659-b250-37ee6874a103</Guid>
+        <Client/>
+        <Creator>LM\a1520465</Creator>
+        <CreationTime>2021-09-09T10:21:15</CreationTime>
+        <Description> (Update for Enhanced Data Encryption).</Description>
+        <ReadOnly>0</ReadOnly>
+        <RevisionAuthor>LM\a1518942</RevisionAuthor>
+        <RevisionTime>2025-01-30T19:28:08</RevisionTime>
+        <EventFilter>1966083;</EventFilter>
+        <Documentation typeid="DocumentationProperties"/>
+        <Properties typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>ProcessJob</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="1" typeid="Variable">
+                        <Name>SuccessCodeRule</Name>
+                        <Value>100</Value>
+                    </Variable>
+                    <Variable t="1" typeid="Variable">
+                        <Name>EncodedSuccessCodeRule</Name>
+                        <Value>100;</Value>
+                    </Variable>
+                    <Variable t="1" typeid="Variable">
+                        <Name>$Type</Name>
+                        <Value>Abat.Jobs.Process</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>PreJobEnabled</Name>
+                        <Value>0</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>PostJobEnabled</Name>
+                        <Value>0</Value>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>Extensions</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="12" typeid="Variable">
+                        <Name>SLASettings</Name>
+                        <Value typeid="VariableCollection"/>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>$ImportedSymbols</Name>
+                <Value>SCD_ENV;SCD_SFTP_Folder_Location;Server_Root;Temp_Folder_Location;File_String_CRAWL;File_Type;SCD_SFTP_Host;File_String;Date_String</Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>Execution</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="2" typeid="Variable">
+                        <Name>CpuPlatform</Name>
+                        <Value>1</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Log.Append</Name>
+                        <Value>0</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Log.Statistics</Name>
+                        <Value>1</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Log.Archive</Name>
+                        <Value>0</Value>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>InterpretExitCode</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>UseBusinessDaySemantics</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>Steps</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.FlowControl.Wait</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Duration</Name>
+                                <Value>30</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>Wait</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.Net.Ftp</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>HostName</Name>
+                                <Value>${SCD_SFTP_Host}</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>UserAccount</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>1549293</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Script</Name>
+                                <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mget ${File_String_CRAWL}*${File_Type}*
+    quit</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Authentication</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>FtpProtocol</Name>
+                                <Value>32</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Protocol</Name>
+                                <Value>6</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>IgnoreErrors</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Port</Name>
+                                <Value>22</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>SftpVersions</Name>
+                                <Value>28</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Passive</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>UseCertificate</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>CertificateObject</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>PrivateKey</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Timeout</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>TunnelInfo</Name>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>Download_LEARN2CRAWL_File</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;Script&lt;/Path&gt;&lt;Value&gt;cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mget ${File_String_CRAWL}*${File_Type}*
+    quit&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;HostName&lt;/Path&gt;&lt;Value&gt;${SCD_SFTP_Host}&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>Script</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mget ${File_String_CRAWL}*${File_Type}*
+    quit</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>HostName</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>${SCD_SFTP_Host}</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.Net.Ftp</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>HostName</Name>
+                                <Value>${SCD_SFTP_Host}</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>UserAccount</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>1549293</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Script</Name>
+                                <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mget ${File_String}*${Date_String}**${File_Type}*
+    quit</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Authentication</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>FtpProtocol</Name>
+                                <Value>32</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Protocol</Name>
+                                <Value>6</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>IgnoreErrors</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Port</Name>
+                                <Value>22</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>SftpVersions</Name>
+                                <Value>28</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Passive</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>UseCertificate</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>CertificateObject</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>PrivateKey</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Timeout</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>TunnelInfo</Name>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>Download_IMW_Report_File</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;Script&lt;/Path&gt;&lt;Value&gt;cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mget ${File_String}*${Date_String}**${File_Type}*
+    quit&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;HostName&lt;/Path&gt;&lt;Value&gt;${SCD_SFTP_Host}&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>Script</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mget ${File_String}*${Date_String}**${File_Type}*
+    quit</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>HostName</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>${SCD_SFTP_Host}</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.PowerShell.ExecutePowershell</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Machine</Name>
+                                <Value>.</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Script</Name>
+                                <Value>$Records = Get-Content ${Server_Root}${Temp_Folder_Location}\${File_String}*${Date_String}**${File_Type}* | Measure-Object
+    Write-Host $Records.Count
+    Return $Records.Count</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>InputObjects</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>InputObject</Name>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>ImplicitRemote</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>ImportedCommandProperties</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>ConsoleFile</Name>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>FormatOutput</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>NoProfile</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>DisplayImmediately</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ReturnValueType</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>ExecutePowerShellScript</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;Script&lt;/Path&gt;&lt;Value&gt;$Records = Get-Content ${Server_Root}${Temp_Folder_Location}\${File_String}*${Date_String}**${File_Type}* | Measure-Object
+    Write-Host $Records.Count
+    Return $Records.Count&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>Script</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>$Records = Get-Content ${Server_Root}${Temp_Folder_Location}\${File_String}*${Date_String}**${File_Type}* | Measure-Object
+    Write-Host $Records.Count
+    Return $Records.Count</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.ActiveBatch.SetVariable</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>VariableName</Name>
+                                <Value>//Count</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>VariableValue</Name>
+                                <Value>%{ExecutePowerShellScript.ReturnValue[0]}</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>SetVariable</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;VariableValue&lt;/Path&gt;&lt;Value&gt;%{ExecutePowerShellScript.ReturnValue[0]}&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>VariableValue</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>%{ExecutePowerShellScript.ReturnValue[0]}</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.Net.Ftp</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>HostName</Name>
+                                <Value>${SCD_SFTP_Host}</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>UserAccount</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>1549293</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Script</Name>
+                                <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mdel ${File_String_CRAWL}*${File_Type}*
+    quit</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Authentication</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>FtpProtocol</Name>
+                                <Value>32</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Protocol</Name>
+                                <Value>6</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>IgnoreErrors</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Port</Name>
+                                <Value>22</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>SftpVersions</Name>
+                                <Value>28</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Passive</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>UseCertificate</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>CertificateObject</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>PrivateKey</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Timeout</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>TunnelInfo</Name>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>Delete_LEARN2CRAWL_File</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;Script&lt;/Path&gt;&lt;Value&gt;cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mdel ${File_String_CRAWL}*${File_Type}*
+    quit&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;HostName&lt;/Path&gt;&lt;Value&gt;${SCD_SFTP_Host}&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>Script</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mdel ${File_String_CRAWL}*${File_Type}*
+    quit</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>HostName</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>${SCD_SFTP_Host}</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.Net.Ftp</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>HostName</Name>
+                                <Value>${SCD_SFTP_Host}</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>UserAccount</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>1549293</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Script</Name>
+                                <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mdel ${File_String}*${Date_String}**${File_Type}*
+    quit</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Authentication</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>FtpProtocol</Name>
+                                <Value>32</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Protocol</Name>
+                                <Value>6</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>IgnoreErrors</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>Port</Name>
+                                <Value>22</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>SftpVersions</Name>
+                                <Value>28</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Passive</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>UseCertificate</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>CertificateObject</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>PrivateKey</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Timeout</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>TunnelInfo</Name>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>Delete_IMW_Report_File</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;Script&lt;/Path&gt;&lt;Value&gt;cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mdel ${File_String}*${Date_String}**${File_Type}*
+    quit&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;HostName&lt;/Path&gt;&lt;Value&gt;${SCD_SFTP_Host}&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>Script</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+    lcd ${Server_Root}${Temp_Folder_Location}
+    mdel ${File_String}*${Date_String}**${File_Type}*
+    quit</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>HostName</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>${SCD_SFTP_Host}</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="1" typeid="Variable">
+                        <Name>JobStepComment</Name>
+                        <Value/>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>$ReferencedLibraries</Name>
+                <Value typeid="ObjectIDCollection">
+                    <Count>2</Count>
+                    <ObjectID typeid="ObjectID">
+                        <ID>601</ID>
+                    </ObjectID>
+                    <ObjectID typeid="ObjectID">
+                        <ID>607</ID>
+                    </ObjectID>
+                </Value>
+            </Variable>
+        </Properties>
+        <Tags typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>V4_DateTimeEvent</Name>
+                <Value typeid="DateTimeEvent">
+                    <ID typeid="ObjectID"/>
+                    <PID typeid="ObjectID"/>
+                    <Attached>1</Attached>
+                    <Enabled>1</Enabled>
+                    <EventID>1966083</EventID>
+                    <Properties typeid="VariableCollection"/>
+                    <Actions typeid="EventActionCollection">
+                        <Count>1</Count>
+                        <EventAction typeid="EventAction">
+                            <CommandID>196609</CommandID>
+                            <CommandArgument/>
+                        </EventAction>
+                    </Actions>
+                    <V4Tag>0</V4Tag>
+                    <Type>4</Type>
+                    <DeferredUntil>2015-09-23T13:38:27</DeferredUntil>
+                    <Interval>36000000000</Interval>
+                    <IntervalOrigin>2020-05-29T16:20:07</IntervalOrigin>
+                    <ComputeIntervalWithDelta>0</ComputeIntervalWithDelta>
+                    <RunLastMissedExecution>1</RunLastMissedExecution>
+                    <OnNonBusinessDayAction>3</OnNonBusinessDayAction>
+                    <TimeZoneType>1</TimeZoneType>
+                    <ConstraintProperties typeid="ConstraintSchedulingProperties">
+                        <EarliestTimeEnabled>0</EarliestTimeEnabled>
+                        <EarliestTime>1900-01-01T00:00:00</EarliestTime>
+                        <LatestTimeEnabled>0</LatestTimeEnabled>
+                        <LatestTime>1900-01-01T00:00:00</LatestTime>
+                        <SpanBusinessDay>1</SpanBusinessDay>
+                    </ConstraintProperties>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>V4_Constraint</Name>
+                <Value typeid="Constraint">
+                    <PID typeid="ObjectID">
+                        <ID>1549507</ID>
+                        <RID>1</RID>
+                        <ClassID>3</ClassID>
+                        <Label>SCD-Download-Files-From-SFTP-To-Temp</Label>
+                        <Name>SCD-Download-Files-From-SFTP-To-Temp</Name>
+                        <Path>/</Path>
+                    </PID>
+                    <RID>2</RID>
+                    <Expression/>
+                    <FailureAction>1</FailureAction>
+                    <RetryInterval>600000000</RetryInterval>
+                    <RetryLimit>5</RetryLimit>
+                    <V4WaitValues>2832337658315008</V4WaitValues>
+                    <Variables typeid="VariableCollection"/>
+                </Value>
+            </Variable>
+            <Variable t="2" typeid="Variable">
+                <Name>GrantedAccess</Name>
+                <Value>-1</Value>
+            </Variable>
+        </Tags>
+        <Variables typeid="VariableCollection"/>
+        <SecurityAccounts typeid="SecurityAccountCollection">
+            <Dirty>0</Dirty>
+            <Count>2</Count>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Authenticated Users</Name>
+                <Permission>6</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Administrators</Name>
+                <Permission>-1</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+        </SecurityAccounts>
+        <Type>6</Type>
+        <Logging typeid="LoggingProperties">
+            <Enabled>1</Enabled>
+            <CentrallyManaged>1</CentrallyManaged>
+            <LogFileName/>
+            <ErrorLogFileEnabled>0</ErrorLogFileEnabled>
+            <ErrorLogFileName/>
+            <ReuseLogFile>0</ReuseLogFile>
+            <LogRetentionEnabled>1</LogRetentionEnabled>
+            <LogRetentionPeriod>365</LogRetentionPeriod>
+        </Logging>
+        <Execution typeid="JobExecutionProperties">
+            <MaximumActiveInstances>2</MaximumActiveInstances>
+            <OnActiveAction>1</OnActiveAction>
+            <OnActiveWaitDuration>0</OnActiveWaitDuration>
+            <OnMaxActiveInstancesAction>1</OnMaxActiveInstancesAction>
+            <AllowDeferredExecution>0</AllowDeferredExecution>
+            <OsPriority>Normal</OsPriority>
+            <CredentialType>1</CredentialType>
+            <UserAccount typeid="ObjectID">
+                <ID>1392</ID>
+            </UserAccount>
+            <UserName/>
+            <EncryptedPassword/>
+            <WorkingDirectory/>
+            <LoadUserProfile>1</LoadUserProfile>
+            <ProcessorMask>-1</ProcessorMask>
+            <ProcessorMaskEnabled>0</ProcessorMaskEnabled>
+            <TestPendingChanges>0</TestPendingChanges>
+        </Execution>
+        <Submission typeid="QueueSubmissionProperties">
+            <Modified>0</Modified>
+            <Queue typeid="ObjectID">
+                <ID>839056</ID>
+            </Queue>
+            <Priority>10</Priority>
+            <SelectionMethod>1</SelectionMethod>
+            <MaximumDispatchDelay>0</MaximumDispatchDelay>
+            <MachineCharacteristics typeid="VariableCollection"/>
+            <UserCharacteristics typeid="VariableCollection"/>
+        </Submission>
+        <Completion typeid="JobCompletionProperties">
+            <DisableAfterFirstRun>0</DisableAfterFirstRun>
+            <KeepInstancesOnQueue>0</KeepInstancesOnQueue>
+            <HistoryRetentionEnabled>1</HistoryRetentionEnabled>
+            <HistoryRetentionPeriod>365</HistoryRetentionPeriod>
+            <OnFailureAction>1</OnFailureAction>
+            <MaximumRestarts>0</MaximumRestarts>
+            <RestartInterval>600000000</RestartInterval>
+            <RestartPreprocessing>0</RestartPreprocessing>
+            <OnMachineFailureAction>1</OnMachineFailureAction>
+        </Completion>
+        <CpuTimeMonitor typeid="MonitoringProperties">
+            <Modified>1</Modified>
+            <Enabled>0</Enabled>
+            <ExpectedTime>0</ExpectedTime>
+            <UseAverageTime>1</UseAverageTime>
+            <DeltaTimeType>1</DeltaTimeType>
+            <DeltaTime>0</DeltaTime>
+            <DeltaTimePercentage>10</DeltaTimePercentage>
+            <AbortOnTimeOverrun>0</AbortOnTimeOverrun>
+            <FailOnTimeUnderrun>0</FailOnTimeUnderrun>
+        </CpuTimeMonitor>
+        <RunTimeMonitor typeid="MonitoringProperties">
+            <Modified>1</Modified>
+            <Enabled>0</Enabled>
+            <ExpectedTime>0</ExpectedTime>
+            <UseAverageTime>1</UseAverageTime>
+            <DeltaTimeType>1</DeltaTimeType>
+            <DeltaTime>0</DeltaTime>
+            <DeltaTimePercentage>10</DeltaTimePercentage>
+            <AbortOnTimeOverrun>0</AbortOnTimeOverrun>
+            <FailOnTimeUnderrun>0</FailOnTimeUnderrun>
+        </RunTimeMonitor>
+        <SecurityDescriptor>AQAEgLwAAADYAAAAAAAAABQAAAACAKgAAgAAAAAAFAAGAAAAAQEAAAAAAAULAAAAAAAYAP////8BAgAAAAAABSAAAAAgAgAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAIAAAAAAAAAHjqIxWPAQAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdAAAAPl/AAABBQAAAAAABRUAAACdQgFO7AIYamkrf0YR81oAAQIAAAAAAAUgAAAAIAIAAGkAbgBnADsARABhAHQAZQBfAFMA</SecurityDescriptor>
+        <TagNames typeid="TagCollection"/>
+    </Object>
+  title: Source
+opswiseGroups:
+- LM\a1520465
+outputFailureOnly: false
+outputReturnFile:
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: "No"
+parameters:
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir:
+script: SCD-Download-Files-From-SFTP-To-Temp-SCR189
+simulation: false
+startHeld: false
+startHeldReason:
+summary: type6
+sysId: 2061709b9d6b4e56aa759baf04d7cd6e
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Authentication
+  options: []
+  required: false
+  sysId: fb162fc10ff04c95a6519387c43717d6
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: CpuPlatform
+  options: []
+  required: false
+  sysId: 9b7f9245a2034b06aba54327e1fba7b7
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Data
+  options: []
+  required: false
+  sysId: 7a38d21765dc4018be87acff1274d634
+  value: <ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"><ObjectBinding
+    i:type="TextBinding"><Path>VariableValue</Path><Value>%{ExecutePowerShellScript.ReturnValue[0]}</Value></ObjectBinding></ObjectBindingCollection>
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: DisplayImmediately
+  options: []
+  required: false
+  sysId: 35853090c4bd4656b50e7d2d907d0d88
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Duration
+  options: []
+  required: false
+  sysId: 90f66cf8a2dd486fa1209858752c0ae1
+  value: '30'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Enabled
+  options: []
+  required: false
+  sysId: c4657275416a43c8b4dde84d3a67cbb6
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: EncodedSuccessCodeRule
+  options: []
+  required: false
+  sysId: 3551267d65be49b5b3536caa00d0d51e
+  value: 100;
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ErrorAction
+  options: []
+  required: false
+  sysId: da85f11743884615b52e14ecb7a349f5
+  value: '2'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Extensions
+  options: []
+  required: false
+  sysId: 392c4d8c17b9425da66b8d1a77c4d3fb
+  value: SLASettings
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: FormatOutput
+  options: []
+  required: false
+  sysId: 803f2cac11df45b6be4a8ab70c3daffc
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: FtpProtocol
+  options: []
+  required: false
+  sysId: cbd2d23fefb64bfbb97d5a7aaaa02808
+  value: '32'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: HostName
+  options: []
+  required: false
+  sysId: 61ec718062e8401bbc826967522276a6
+  value: ${SCD_SFTP_Host}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: IgnoreErrors
+  options: []
+  required: false
+  sysId: d581d412228644a5a9fcc3df32784103
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ImplicitRemote
+  options: []
+  required: false
+  sysId: 7de28d01b93e40e09d92b087a4ee8691
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ImportedSymbols
+  options: []
+  required: false
+  sysId: 759f741ea4e248e592de38cf27f68864
+  value: 
+    SCD_ENV;SCD_SFTP_Folder_Location;Server_Root;Temp_Folder_Location;File_String_CRAWL;File_Type;SCD_SFTP_Host;File_String;Date_String
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: InterpretExitCode
+  options: []
+  required: false
+  sysId: 8ce0b4c991f149a5be18a2a2f8df816f
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Library
+  options: []
+  required: false
+  sysId: 7d3790f8be654966ba3af7c2985703eb
+  value: '601'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Log_Append
+  options: []
+  required: false
+  sysId: 185c0d9bf25344a28825324b7d6e32bc
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Log_Archive
+  options: []
+  required: false
+  sysId: dbc4a17016d14ea380db64d5c2c9fcdf
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Log_Statistics
+  options: []
+  required: false
+  sysId: be22fd529300494f8536b3eb5afda530
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Machine
+  options: []
+  required: false
+  sysId: 3fa2840549704eedb1cf225c79b941fa
+  value: .
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Name
+  options: []
+  required: false
+  sysId: eddd012ee3aa4d65915b138632851a2c
+  value: Wait
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: NoProfile
+  options: []
+  required: false
+  sysId: ab5dadfd0d8643a7a8208774f4568c22
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Passive
+  options: []
+  required: false
+  sysId: 10068f683d3d4154914f6791101b1f11
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Path
+  options: []
+  required: false
+  sysId: 7d67addadf384769b82539dd80c20527
+  value: Script
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Port
+  options: []
+  required: false
+  sysId: 3792954b4ec1461399bee2f50d60c8f7
+  value: '22'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: PostJobEnabled
+  options: []
+  required: false
+  sysId: 537acc26becc40749d82d0b5b3173a9f
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: PreJobEnabled
+  options: []
+  required: false
+  sysId: 1ff7a6e3e8454b82bd82494af82b124a
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Protocol
+  options: []
+  required: false
+  sysId: 917a287f2f7a40f488ee2cfce90f3354
+  value: '6'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ReferencedLibraries
+  options: []
+  required: false
+  sysId: aadd5cecd602451894866fef3f84fecd
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ReturnValueType
+  options: []
+  required: false
+  sysId: d48ce8550a194aee980f6e8cc0abf399
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: SftpVersions
+  options: []
+  required: false
+  sysId: c1925acae014414ebcf4789ed15f038b
+  value: '28'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: SuccessCodeRule
+  options: []
+  required: false
+  sysId: 58857c7fa8ab49b3a234a5798deffbfc
+  value: '100'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Type
+  options: []
+  required: false
+  sysId: 3f1ed69540864432a205facae369c0d2
+  value: Abat.Jobs.Process
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: UseBusinessDaySemantics
+  options: []
+  required: false
+  sysId: ce0458655b564d4bb226f2b528012e04
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: UseCertificate
+  options: []
+  required: false
+  sysId: 07e0ef6437ed4a9282c5d60335f2e3e8
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: UserAccount
+  options: []
+  required: false
+  sysId: 1e3bba682dcb440bb3c4c13841d1f25a
+  value: '1549293'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Value
+  options: []
+  required: false
+  sysId: 1ff7303f48014d04820d5e28a90a5cc1
+  value: ${SCD_SFTP_Host}
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: VariableName
+  options: []
+  required: false
+  sysId: 63b3dc7246a946d18f6dfa07f6b14166
+  value: //Count
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: VariableValue
+  options: []
+  required: false
+  sysId: e803189a660e40a2aaf7cae0d3608501
+  value: '%{ExecutePowerShellScript.ReturnValue[0]}'
+version: 1
+virtualResources: []
+waitForOutput: false

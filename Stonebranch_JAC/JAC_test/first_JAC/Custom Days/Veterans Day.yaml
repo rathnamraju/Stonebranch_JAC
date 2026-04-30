@@ -1,0 +1,23 @@
+adjustment: None
+adjustmentAmount: 1
+adjustmentType: Day
+category: Holiday
+comments: 11th of November
+ctype: Absolute Repeating Date
+date:
+dateList: []
+day: 11
+dayofweek: Sun
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_custom_day
+holiday: true
+month: Nov
+name: Veterans Day
+nthAmount: 1
+nthType: Day
+observedRules: []
+period: false
+relfreq: 1st
+retainSysIds: true
+sysId: b0f91f92e0a331379b1d828e9bae9a75
+version: 1

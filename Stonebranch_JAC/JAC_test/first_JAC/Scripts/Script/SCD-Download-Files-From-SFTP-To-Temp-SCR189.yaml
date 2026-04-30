@@ -1,0 +1,16 @@
+content: |-
+  cd /${SCD_ENV}${SCD_SFTP_Folder_Location}
+  lcd ${Server_Root}${Temp_Folder_Location}
+  mdel ${File_String}*${Date_String}**${File_Type}*
+  quit
+description:
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: SCD-Download-Files-From-SFTP-To-Temp-SCR189
+scriptType: Script
+sysId: 623330f4ba493b29b01e0612209ecf98
+version: 1

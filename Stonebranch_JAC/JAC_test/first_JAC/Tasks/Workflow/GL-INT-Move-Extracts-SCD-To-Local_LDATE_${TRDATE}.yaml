@@ -1,0 +1,471 @@
+type: taskWorkflow
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+calculateCp: false
+calendar:
+cpDuration:
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customChoiceField1:
+  label:
+  value:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_task_workflow
+firstRun: ''
+holdResources: false
+instanceWait: -- None --
+instanceWaitLookup: Task
+lastRun: ''
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: GL-INT-Move-Extracts-SCD-To-Local_LDATE_${TRDATE}
+notes:
+- sysId: b00d70b30973420bb876fa035b331c2b
+  text: |-
+    <Object typeid="JobPlan">
+        <ID>9789073</ID>
+        <RID>7</RID>
+        <ClassID>13</ClassID>
+        <Label>GL-INT-Move-Extracts-SCD-To-Local</Label>
+        <Name>GL-INT-Move-Extracts-SCD-To-Local</Name>
+        <PID typeid="ObjectID">
+            <ID>11800879</ID>
+        </PID>
+        <Enabled>0</Enabled>
+        <GlobalDisable>0</GlobalDisable>
+        <Visibility>127</Visibility>
+        <Owner>LM\n1552454</Owner>
+        <Flags>8</Flags>
+        <Status>1</Status>
+        <OperationDateTime>0001-01-01T00:00:00</OperationDateTime>
+        <LockIsExclusive>0</LockIsExclusive>
+        <LockMode>0</LockMode>
+        <LockOperation>0</LockOperation>
+        <LockOwner/>
+        <LockFlags/>
+        <Guid>5404cd0e-4998-497a-8f68-14975f80be51</Guid>
+        <Client/>
+        <Creator>LM\n1552454</Creator>
+        <CreationTime>2025-01-24T20:22:12</CreationTime>
+        <Description>plan for international market data</Description>
+        <ReadOnly>0</ReadOnly>
+        <RevisionAuthor>LM\a1536575</RevisionAuthor>
+        <RevisionTime>2025-09-17T12:04:48</RevisionTime>
+        <EventFilter>1966081;1966082;1966086;1966090;</EventFilter>
+        <Documentation typeid="DocumentationProperties"/>
+        <Properties typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>Extensions</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="12" typeid="Variable">
+                        <Name>SLASettings</Name>
+                        <Value typeid="VariableCollection">
+                            <Variable t="3" typeid="Variable">
+                                <Name>$IsObjectPropertyCollection</Name>
+                                <Value>1</Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>$IsObjectPropertyCollection</Name>
+                        <Value>1</Value>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>$ImportedSymbols</Name>
+                <Value/>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>TriggerEventingEnabled</Name>
+                <Value>1</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>ScheduleEventingEnabled</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>ActiveBatchEventTriggers</Name>
+                <Value>1</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>UseBusinessDaySemantics</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>Preprocessing.Strict</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>Preprocessing.InheritVariables</Name>
+                <Value>0</Value>
+            </Variable>
+        </Properties>
+        <Tags typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>V4_DateTimeEvent</Name>
+                <Value typeid="DateTimeEvent">
+                    <ID typeid="ObjectID">
+                        <ID>9789077</ID>
+                        <RID>5</RID>
+                        <Label>DateTime</Label>
+                        <Name>DateTime</Name>
+                        <Path>/</Path>
+                    </ID>
+                    <PID typeid="ObjectID">
+                        <ID>9789073</ID>
+                        <RID>5</RID>
+                        <ClassID>13</ClassID>
+                        <Label>GL-INT-Move-Extracts-SCD-To-Local</Label>
+                        <Name>GL-INT-Move-Extracts-SCD-To-Local</Name>
+                        <Path>/</Path>
+                    </PID>
+                    <Attached>1</Attached>
+                    <Enabled>0</Enabled>
+                    <EventID>1966083</EventID>
+                    <Properties typeid="VariableCollection">
+                        <Variable t="7" typeid="Variable">
+                            <Name>ExpectedDeltaTime</Name>
+                            <Value>0</Value>
+                        </Variable>
+                        <Variable t="2" typeid="Variable">
+                            <Name>ExpectedSchedulesEnabled</Name>
+                            <Value>0</Value>
+                        </Variable>
+                        <Variable t="12" typeid="Variable">
+                            <Name>ExpectedSchedules</Name>
+                            <Value typeid="ObjectIDCollection">
+                                <Count>0</Count>
+                            </Value>
+                        </Variable>
+                    </Properties>
+                    <Actions typeid="EventActionCollection">
+                        <Count>1</Count>
+                        <EventAction typeid="EventAction">
+                            <CommandID>196609</CommandID>
+                            <CommandArgument/>
+                        </EventAction>
+                    </Actions>
+                    <V4Tag>6</V4Tag>
+                    <Type>4</Type>
+                    <DeferredUntil>2023-10-19T20:51:41</DeferredUntil>
+                    <Interval>36000000000</Interval>
+                    <IntervalOrigin>2020-06-16T16:58:26</IntervalOrigin>
+                    <ComputeIntervalWithDelta>0</ComputeIntervalWithDelta>
+                    <RunLastMissedExecution>1</RunLastMissedExecution>
+                    <OnNonBusinessDayAction>3</OnNonBusinessDayAction>
+                    <TimeZoneType>1</TimeZoneType>
+                    <ConstraintProperties typeid="ConstraintSchedulingProperties">
+                        <EarliestTimeEnabled>0</EarliestTimeEnabled>
+                        <EarliestTime>1900-01-01T00:00:00</EarliestTime>
+                        <LatestTimeEnabled>0</LatestTimeEnabled>
+                        <LatestTime>1900-01-01T23:59:00</LatestTime>
+                        <SpanBusinessDay>1</SpanBusinessDay>
+                    </ConstraintProperties>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>V4_Constraint</Name>
+                <Value typeid="Constraint">
+                    <PID typeid="ObjectID">
+                        <ID>9789073</ID>
+                        <RID>1</RID>
+                        <ClassID>13</ClassID>
+                        <Label>GL-INT-Move-Extracts-SCD-To-Local</Label>
+                        <Name>GL-INT-Move-Extracts-SCD-To-Local</Name>
+                        <Path>/</Path>
+                    </PID>
+                    <RID>2</RID>
+                    <Expression/>
+                    <FailureAction>1</FailureAction>
+                    <RetryInterval>1200000000</RetryInterval>
+                    <RetryLimit>5</RetryLimit>
+                    <V4WaitValues>290266774896896</V4WaitValues>
+                    <Variables typeid="VariableCollection"/>
+                </Value>
+            </Variable>
+            <Variable t="2" typeid="Variable">
+                <Name>GrantedAccess</Name>
+                <Value>-1</Value>
+            </Variable>
+        </Tags>
+        <Variables typeid="VariableCollection">
+            <Variable t="1" typeid="Variable">
+                <Name>SCD_SFTP_Folder_Location</Name>
+                <Value>/ActiveData/Interfaces/Out/SFTP/GeneralLedger/GL/Outgoing</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>Temp_Folder_Location</Name>
+                <Value>outbound\general-ledger\GL-INT</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>File_Type</Name>
+                <Value>.csv</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>AWS_Bucket_Subfolder</Name>
+                <Value>/outbound/gl/</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>AWS_Bucket_Subfolder_FCS</Name>
+                <Value>/inbound/LMI/SimCorp/SCD_CORP_GL/inbound/extract/</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>IRS_Type</Name>
+                <Value>GL-INT</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>Footer_Flag</Name>
+                <Value>Y</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>File_Name</Name>
+                <Value>${File_String}**${File_Type}*</Value>
+            </Variable>
+            <Variable a="1" t="1" typeid="Variable">
+                <Name>File_Mask</Name>
+                <Value>SCD_INT_GL_ACCOUNTS_,SCD_F_TRN_INT_</Value>
+            </Variable>
+            <Variable a="1" t="1" typeid="Variable">
+                <Name>File_String</Name>
+                <Value>SCD_INT_GL_ACCOUNTS_</Value>
+            </Variable>
+        </Variables>
+        <SecurityAccounts typeid="SecurityAccountCollection">
+            <Dirty>0</Dirty>
+            <Count>2</Count>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Authenticated Users</Name>
+                <Permission>39</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Administrators</Name>
+                <Permission>-1</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+        </SecurityAccounts>
+        <UserAccount typeid="ObjectID">
+            <ID>1196</ID>
+        </UserAccount>
+        <Execution typeid="JobPlanExecutionProperties">
+            <MaximumActiveInstances>0</MaximumActiveInstances>
+            <OnActiveAction>1</OnActiveAction>
+            <OnActiveWaitDuration>0</OnActiveWaitDuration>
+            <OnMaxActiveInstancesAction>1</OnMaxActiveInstancesAction>
+            <AllowDeferredExecution>0</AllowDeferredExecution>
+        </Execution>
+        <Completion typeid="JobPlanCompletionProperties">
+            <DisableAfterFirstRun>0</DisableAfterFirstRun>
+            <KeepInstancesOnQueue>0</KeepInstancesOnQueue>
+            <HistoryRetentionEnabled>1</HistoryRetentionEnabled>
+            <HistoryRetentionPeriod>365</HistoryRetentionPeriod>
+            <OnFailureAction>1</OnFailureAction>
+            <MaximumRestarts>0</MaximumRestarts>
+            <RestartInterval>600000000</RestartInterval>
+            <RestartPreprocessing>0</RestartPreprocessing>
+            <RuleType>1</RuleType>
+            <Rules typeid="JobPlanCompletionRuleCollection">
+                <Count>0</Count>
+            </Rules>
+        </Completion>
+        <RunTimeMonitor typeid="MonitoringProperties">
+            <Modified>1</Modified>
+            <Enabled>0</Enabled>
+            <ExpectedTime>0</ExpectedTime>
+            <UseAverageTime>0</UseAverageTime>
+            <DeltaTimeType>1</DeltaTimeType>
+            <DeltaTime>0</DeltaTime>
+            <DeltaTimePercentage>50</DeltaTimePercentage>
+            <AbortOnTimeOverrun>1</AbortOnTimeOverrun>
+            <FailOnTimeUnderrun>0</FailOnTimeUnderrun>
+        </RunTimeMonitor>
+        <SecurityDescriptor>AQAEgLwAAADYAAAAAAAAABQAAAACAKgAAgAAAAAAFAAnAAAAAQEAAAAAAAULAAAAAAAYAP////8BAgAAAAAABSAAAAAgAgAALwBCAGwAYQBjAGsAcgBvAGMAawAvAEkAbgBiAG8AdQBuAGQALwBJAG4AdAByAGEAZABhAHkALwBQAGwAYQBuAHMALwBCAFIAUwAgAEkAbgB0AHIAYQBkAGEAeQAAAAAAcUNTYjh2RFUAf1s4dAAAAAAAAAABBQAAAAAABRUAAACdQgFO7AIYamkrf0ZSdV4AAQIAAAAAAAUgAAAAIAIAAHMAYwBpAC4AQQBjAHQAaQB2AGUA</SecurityDescriptor>
+        <TagNames typeid="TagCollection"/>
+    </Object>
+  title: Source
+numberOfTasks: 1
+opswiseGroups:
+- LM\n1552454
+overrideCalendar: false
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 0
+runCriteria:
+- businessDay: false
+  complex: true
+  complexAdjective: Every
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice:
+  description:
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: 068656d2d43c4ad48fc7b9bb171494e6
+  task: SCD-Download-Files-From-SFTP-To-Temp
+  type: Run Criteria
+  variable: false
+  variableName:
+  variableOp: '='
+  variableValue:
+  vertexId: '5000'
+runTime: 0
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason:
+stepActions: []
+stepConditions: []
+summary: JobPlan plan for international market data
+sysId: c7a019fa1b9e462782f6f738223ac38d
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ActiveBatchEventTriggers
+  options: []
+  required: false
+  sysId: e96073937ea24f9184cce92e500add29
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: IsObjectPropertyCollection
+  options: []
+  required: false
+  sysId: 3f1baef8517146b583db333461ab85dd
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Preprocessing_InheritVariables
+  options: []
+  required: false
+  sysId: d80bb289fa244806b6cce7352f377fb4
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Preprocessing_Strict
+  options: []
+  required: false
+  sysId: e9929f795189401682a87244d2d08229
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ScheduleEventingEnabled
+  options: []
+  required: false
+  sysId: 87af7d44bfc448b69b65983f5806518d
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: TriggerEventingEnabled
+  options: []
+  required: false
+  sysId: 7089edcc19b54b98a0becfc0626affae
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: UseBusinessDaySemantics
+  options: []
+  required: false
+  sysId: dca4f29a44ff46a5880a5499ae34e0f0
+  value: '0'
+version: 1
+virtualResources: []
+workflowEdges: []
+workflowVertices:
+- alias:
+  conditionExpression:
+  task:
+    value: GL-010-Move-Extracts-SCD-INT-GL-ACCOUNTS-To-Local-WF-
+  vertexId: '5000'
+  vertexX: '241.5'
+  vertexY: '89.0'

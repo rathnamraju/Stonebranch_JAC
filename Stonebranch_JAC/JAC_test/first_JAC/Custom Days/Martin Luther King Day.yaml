@@ -1,0 +1,23 @@
+adjustment: None
+adjustmentAmount: 1
+adjustmentType: Day
+category: Holiday
+comments: 3rd Monday of January
+ctype: Relative Repeating Date
+date:
+dateList: []
+day: 1
+dayofweek: Mon
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_custom_day
+holiday: true
+month: Jan
+name: Martin Luther King Day
+nthAmount: 1
+nthType: Day
+observedRules: []
+period: false
+relfreq: 3rd
+retainSysIds: true
+sysId: 67dbccc6283339949b795b06f391c938
+version: 1
