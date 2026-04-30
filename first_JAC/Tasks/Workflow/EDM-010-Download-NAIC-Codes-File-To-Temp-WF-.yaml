@@ -321,11 +321,3 @@ variables:
 version: 1
 virtualResources: []
 workflowEdges: []
-workflowVertices:
-- alias:
-  conditionExpression:
-  task:
-    value: Template-Download-Files-S3-To-Temp
-  vertexId: '5000'
-  vertexX: '241.5'
-  vertexY: '89.0'
