@@ -1,0 +1,23 @@
+adjustment: None
+adjustmentAmount: 1
+adjustmentType: Day
+category: Holiday
+comments: 4th of July
+ctype: Absolute Repeating Date
+date:
+dateList: []
+day: 4
+dayofweek: Sun
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_custom_day
+holiday: true
+month: Jul
+name: Independence Day
+nthAmount: 1
+nthType: Day
+observedRules: []
+period: false
+relfreq: 1st
+retainSysIds: true
+sysId: 09f3c3053ab33dc6ac5827f391715c0d
+version: 1

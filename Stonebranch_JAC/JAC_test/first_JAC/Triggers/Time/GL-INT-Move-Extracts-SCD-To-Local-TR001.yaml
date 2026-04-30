@@ -1,0 +1,176 @@
+type: triggerTime
+action: Do Not Trigger
+adjustInterval: false
+adjustmentAmount: 1
+adjustmentType: Day
+calendar: Default conversion calendar
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+dateAdjective: Every
+dateAdjustment: None
+dateNoun:
+  value: Day
+dateNouns:
+- value: Day
+dateQualifier:
+  value: Year
+dateQualifiers:
+- value: Year
+dayInterval: 2
+dayStyle: Simple
+description: '!!! EVDT'
+disabledTime: ''
+enabled: false
+enabledEnd: 00:00
+enabledStart: 00:00
+enabledTime: ''
+enforceVariables: false
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_trigger_time
+forecast: false
+fri: false
+intervalStartingDate:
+lockVariables: false
+mon: false
+name: GL-INT-Move-Extracts-SCD-To-Local-TR001
+nextScheduledTime: ''
+notes:
+- sysId: b5d0bbe1e1534d2c8751a615cd79aa51
+  text: |-
+    <Event typeid="DateTimeEvent">
+        <ID typeid="ObjectID">
+            <ID>9789077</ID>
+            <RID>7</RID>
+            <Label>DateTime</Label>
+            <Name>DateTime</Name>
+            <Path>/</Path>
+        </ID>
+        <PID typeid="ObjectID">
+            <ID>9789073</ID>
+            <RID>7</RID>
+            <ClassID>13</ClassID>
+            <Label>GL-INT-Move-Extracts-SCD-To-Local</Label>
+            <Name>GL-INT-Move-Extracts-SCD-To-Local</Name>
+        </PID>
+        <Attached>1</Attached>
+        <Enabled>0</Enabled>
+        <EventID>1966083</EventID>
+        <Properties typeid="VariableCollection">
+            <Variable t="7" typeid="Variable">
+                <Name>ExpectedDeltaTime</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="2" typeid="Variable">
+                <Name>ExpectedSchedulesEnabled</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>ExpectedSchedules</Name>
+                <Value typeid="ObjectIDCollection">
+                    <Count>0</Count>
+                </Value>
+            </Variable>
+        </Properties>
+        <Actions typeid="EventActionCollection">
+            <Count>1</Count>
+            <EventAction typeid="EventAction">
+                <CommandID>196609</CommandID>
+                <CommandArgument/>
+            </EventAction>
+        </Actions>
+        <V4Tag>6</V4Tag>
+        <Type>4</Type>
+        <DeferredUntil>2023-10-19T20:51:41</DeferredUntil>
+        <Interval>36000000000</Interval>
+        <IntervalOrigin>2020-06-16T16:58:26</IntervalOrigin>
+        <ComputeIntervalWithDelta>0</ComputeIntervalWithDelta>
+        <RunLastMissedExecution>1</RunLastMissedExecution>
+        <OnNonBusinessDayAction>3</OnNonBusinessDayAction>
+        <TimeZoneType>1</TimeZoneType>
+        <ConstraintProperties typeid="ConstraintSchedulingProperties">
+            <EarliestTimeEnabled>0</EarliestTimeEnabled>
+            <EarliestTime>1900-01-01T00:00:00</EarliestTime>
+            <LatestTimeEnabled>0</LatestTimeEnabled>
+            <LatestTime>1900-01-01T23:59:00</LatestTime>
+            <SpanBusinessDay>1</SpanBusinessDay>
+        </ConstraintProperties>
+    </Event>
+  title: Source
+nthAmount: 5
+opswiseGroups: []
+rdExcludeBackup: false
+restrictedTimes: false
+restriction: false
+restrictionAdjective: Every
+restrictionComplex: false
+restrictionMode: Or
+restrictionNoun:
+restrictionNouns: []
+restrictionNthAmount: 5
+restrictionQualifier:
+  value: Year
+restrictionQualifiers:
+- value: Year
+restrictionSimple: false
+retainSysIds: true
+retentionDuration: 1
+retentionDurationPurge: false
+retentionDurationUnit: Days
+sat: false
+simpleDateType: Daily
+simulateTasks: false
+simulationOption: -- System Default --
+situation: Holiday
+skipActive: false
+skipAfterDate:
+skipAfterTime:
+skipBeforeDate:
+skipBeforeTime:
+skipCondition: None
+skipCount: 0
+skipDateList: []
+skipRestriction: None
+startTimeEnable: false
+startingAt: '*:00'
+sun: false
+sysId: 929222d9af684ef5a86f803fc479be15
+tasks:
+- GL-INT-Move-Extracts-SCD-To-Local_LDATE_${TRDATE}
+thu: false
+time: 00:00
+timeInterval:
+timeIntervalUnits: Hours
+timeStyle: Absolute
+timeZone:
+tue: false
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ExpectedDeltaTime
+  options: []
+  required: false
+  sysId: 6a507f9bdd094939b428e44b9f07b5f7
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ExpectedSchedules
+  options: []
+  required: false
+  sysId: aa19dcd3ba2b49ac88671f25b68dfcd7
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ExpectedSchedulesEnabled
+  options: []
+  required: false
+  sysId: c59218778bbf42fc9ff1fdd280970b56
+  value: '0'
+version: 1
+wed: false

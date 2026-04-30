@@ -1,0 +1,23 @@
+adjustment: None
+adjustmentAmount: 1
+adjustmentType: Day
+category: Holiday
+comments: 3rd Monday of February
+ctype: Relative Repeating Date
+date:
+dateList: []
+day: 1
+dayofweek: Mon
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_custom_day
+holiday: true
+month: Feb
+name: Presidents' Day
+nthAmount: 1
+nthType: Day
+observedRules: []
+period: false
+relfreq: 3rd
+retainSysIds: true
+sysId: 9ff74624ceac38f9860afb8d76f8c8c2
+version: 1
