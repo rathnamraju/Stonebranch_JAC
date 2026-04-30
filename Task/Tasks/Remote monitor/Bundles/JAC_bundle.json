@@ -1,0 +1,50 @@
+{
+    "retainSysIds": true,
+    "name": "JAC_bundle",
+    "sysId": "285a1070c343444bb0e127ed8e15cbe5",
+    "description": null,
+    "opswiseGroups": [
+        "LM\\a1525449"
+    ],
+    "defaultPromotionTarget": null,
+    "excludeOnExistence": null,
+    "followReferences": false,
+    "promoteBundleDefinition": false,
+    "promoteByBusinessServices": [],
+    "visibleTo": null,
+    "bundleAgentClusters": [],
+    "bundleApplications": [],
+    "bundleBusinessServices": [],
+    "bundleCalendars": [],
+    "bundleCredentials": [],
+    "bundleCustomDays": [],
+    "bundleDatabaseConnections": [],
+    "bundleEmailConnections": [],
+    "bundleEmailTemplates": [],
+    "bundleOAuthClients": [],
+    "bundlePeoplesoftConnections": [],
+    "bundleReports": [],
+    "bundleSapConnections": [],
+    "bundleScripts": [],
+    "bundleSnmpManagers": [],
+    "bundleTasks": [
+        {
+            "addedBy": "ops.admin",
+            "description": "/PROD/SCD/Outbound/IMW/Plan/IMW-BVRF-Extracts-Move-To-S3-FSA",
+            "name": "WF_SIMCORP_IMW-BVRF-Extracts-S3-FSA_Monthly_${TRDATE}",
+            "sysId": "c399ce57e7d44763bd2044e5aed31131",
+            "type": "Workflow"
+        }
+    ],
+    "bundleTriggers": [],
+    "bundleUniversalEventTemplates": [],
+    "bundleUniversalTemplates": [],
+    "bundleVariables": [],
+    "bundleVirtualResources": [],
+    "updated": "2026-04-30 18:42:46 +0530",
+    "updatedBy": "ops.admin",
+    "created": "2026-04-30 16:23:00 +0530",
+    "createdBy": "ops.admin",
+    "exportReleaseLevel": "7.9.2.0",
+    "exportTable": "ops_bundle"
+}

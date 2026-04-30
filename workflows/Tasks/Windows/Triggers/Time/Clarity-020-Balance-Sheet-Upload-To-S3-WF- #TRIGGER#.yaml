@@ -1,0 +1,93 @@
+type: triggerTime
+action: Do Not Trigger
+adjustInterval: false
+adjustmentAmount: 1
+adjustmentType: Day
+calendar: System Default
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+dateAdjective: Every
+dateAdjustment: None
+dateNoun:
+  value: Day
+dateNouns:
+- value: Day
+dateQualifier:
+  value: Year
+dateQualifiers:
+- value: Year
+dayInterval: 2
+dayStyle: Simple
+description:
+disabledTime: ''
+enabled: false
+enabledEnd: 00:00
+enabledStart: 00:00
+enabledTime: ''
+enforceVariables: false
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_trigger_time
+forecast: false
+fri: false
+intervalStartingDate: '2026-04-30'
+lockVariables: false
+mon: false
+name: 'Clarity-020-Balance-Sheet-Upload-To-S3-WF- #TRIGGER#'
+nextScheduledTime: ''
+notes: []
+nthAmount: 5
+opswiseGroups: []
+rdExcludeBackup: false
+restrictedTimes: false
+restriction: false
+restrictionAdjective: Every
+restrictionComplex: false
+restrictionMode: Or
+restrictionNoun:
+  value: Day
+restrictionNouns:
+- value: Day
+restrictionNthAmount: 5
+restrictionQualifier:
+  value: Year
+restrictionQualifiers:
+- value: Year
+restrictionSimple: false
+retainSysIds: true
+retentionDuration: 1
+retentionDurationPurge: false
+retentionDurationUnit: Days
+sat: false
+simpleDateType: Daily
+simulateTasks: false
+simulationOption: -- System Default --
+situation: Holiday
+skipActive: false
+skipAfterDate:
+skipAfterTime:
+skipBeforeDate:
+skipBeforeTime:
+skipCondition: None
+skipCount: 0
+skipDateList: []
+skipRestriction: None
+startTimeEnable: false
+startingAt: '*:00'
+sun: false
+sysId: 5d2e8cb906544ce2b0840edbf3c103e8
+tasks:
+- Clarity-020-Balance-Sheet-Upload-To-S3-WF-
+thu: false
+time: 00:00
+timeInterval:
+timeIntervalUnits: Hours
+timeStyle: Absolute
+timeZone:
+tue: false
+variables: []
+version: 1
+wed: false

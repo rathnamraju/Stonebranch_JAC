@@ -1,0 +1,48 @@
+retainSysIds: true
+name: JAC_bundle
+sysId: 285a1070c343444bb0e127ed8e15cbe5
+description:
+opswiseGroups:
+- LM\a1525449
+defaultPromotionTarget:
+excludeOnExistence:
+followReferences: false
+promoteBundleDefinition: false
+promoteByBusinessServices: []
+visibleTo:
+bundleAgentClusters: []
+bundleApplications: []
+bundleBusinessServices: []
+bundleCalendars: []
+bundleCredentials: []
+bundleCustomDays: []
+bundleDatabaseConnections: []
+bundleEmailConnections: []
+bundleEmailTemplates: []
+bundleOAuthClients: []
+bundlePeoplesoftConnections: []
+bundleReports: []
+bundleSapConnections: []
+bundleScripts: []
+bundleSnmpManagers: []
+bundleTasks:
+- addedBy: ops.admin
+  description: type6
+  name: Template-Upload-Files-Temp-To-S3_#2
+  sysId: c2602cc65c9443e39e5f1182394e539c
+  type: Windows
+bundleTriggers:
+- addedBy: ops.admin
+  name: 'Clarity-020-Balance-Sheet-Upload-To-S3-WF- #TRIGGER#'
+  sysId: 390f88a83b0c4d2ba7da3fe32760e357
+  type: Time
+bundleUniversalEventTemplates: []
+bundleUniversalTemplates: []
+bundleVariables: []
+bundleVirtualResources: []
+updated: 2026-04-30 16:25:21 +0530
+updatedBy: ops.admin
+created: 2026-04-30 16:23:00 +0530
+createdBy: ops.admin
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_bundle
