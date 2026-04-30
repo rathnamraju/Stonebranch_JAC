@@ -1,0 +1,248 @@
+type: taskWorkflow
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customChoiceField1:
+  label: null
+  value: null
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_task_workflow
+firstRun: ''
+holdResources: false
+instanceWait: -- None --
+instanceWaitLookup: Task
+lastRun: ''
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: WF_SIMCORP_IMW-BVRF-Extracts-S3-FSA_Monthly_${TRDATE}
+notes: []
+numberOfTasks: 0
+opswiseGroups: []
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resPriorityVar: null
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 0
+runCriteria: []
+runTime: 0
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: /PROD/SCD/Outbound/IMW/Plan/IMW-BVRF-Extracts-Move-To-S3-FSA
+sysId: bd7f91431cd6dc1601258b76f309a5a4
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Scd_Sftp_Folder_Location
+  options: []
+  required: false
+  sysId: 8d4e9b1f6a7c2e53a90d8c24f5e1abcg
+  value: /ActiveData/Interfaces/Out/SFTP/IMW/BVRFRpt/Outgoing
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Temp_Folder_Location
+  options: []
+  required: false
+  sysId: c844c3451f474971894f5a59f8bfcc7d
+  value: outbound\imw\BVRFRpt
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: File_String
+  options: []
+  required: false
+  sysId: de7becbaf24f4dfeabe1c7ef7c70d475
+  value: IMW_BVRF_REPORT
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: File_type
+  options: []
+  required: false
+  sysId: 038dfe8fd6d1487cb439ac3516184c98
+  value: csv
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Aws_Bucket_Subfolder
+  options: []
+  required: false
+  sysId: 24a4e15f9f47446ab2d590413b859e9d
+  value: /bvrfrpt/
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Aws_Bucket_Subfolder_Archive
+  options: []
+  required: false
+  sysId: f5dbf15aa87e4dbc99e369512f362437
+  value: /archive/bvrfrpt/
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Dataset_Name
+  options: []
+  required: false
+  sysId: e4f703c03bda42cc9c2c8d55728f3782
+  value: '''bvrfrpt'''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Num_Days_to_Archive
+  options: []
+  required: false
+  sysId: e999b8f97f2041929b689b7c5fe7d95b
+  value: '365'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Column_Naming_Function
+  options: []
+  required: false
+  sysId: 57adfdf32d1d4281b7b99cf825116cbe
+  value: UDF_AF_VALIDATE_COLUMN_NAMING_SPE
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: FOLDER
+  options: []
+  required: false
+  sysId: a34d3f09fad744869c5b3331a725a728
+  value: e0c6e6b509854ca136848eec34e1cc85
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Snow_Stage
+  options: []
+  required: false
+  sysId: bea119bf371944faa770755350074a5d
+  value: STG_S3_LMI_FSA_SCD_POWERBI_REPORT_INBOUND
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Snow_Stage_Result
+  options: []
+  required: false
+  sysId: e4addf98207e404b911840687e7b7d74
+  value: STG_S3_LMI_FSA_SCD_POWERBI_REPORT_OUTBOUND
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Snowflake_Result_File_Pattern
+  options: []
+  required: false
+  sysId: c5cd2dddffa34703937aa9680d347674
+  value: IMW_TAX_BVRF_REPORT
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ARCHIVE_FOLDER
+  options: []
+  required: false
+  sysId: 2bc2b7d81f214d49897c0307a2d93a7a
+  value: 38c6e6b51b6f1fd8635c04bab9f955a5
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Snowflake_Database
+  options: []
+  required: false
+  sysId: 630ae4998797464f8cce263808b01691
+  value: PROD_LMI_FSA
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: SNOWFLAKE_STAGING_DATABASE
+  options: []
+  required: false
+  sysId: 53b61654c6274283845f7bb5373880c0
+  value: PROD_LMI_FSA
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: Snowflake_Schema
+  options: []
+  required: false
+  sysId: 02999bde49814785abf709ba74e395e7
+  value: LMI_FSA
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: PBI_datasets_to_refresh
+  options: []
+  required: false
+  sysId: 2a1c325250824cab98c2b70c9d13babc
+  value: '''TAX_BVRF_GL_Recon'' ''bvrfrpt'''
+version: 2
+virtualResources: []
+workflowEdges: []
+workflowVertices: []
