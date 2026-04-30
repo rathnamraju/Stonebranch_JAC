@@ -1,0 +1,355 @@
+type: taskWorkflow
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+calculateCp: false
+calendar:
+changeHistory: []
+cpDuration:
+cpDurationUnit: Minutes
+created: 2022-07-05 16:46:06 -0400
+createdBy: Huseyin
+criticalEndpoints: []
+customChoiceField1:
+  label: Support Level
+  value:
+customField1:
+  label: Incident
+  value:
+customField2:
+  label: Documentation
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 8.0.0.0
+exportTable: ops_task_workflow
+firstRun: ''
+holdResources: false
+instanceWait: -- None --
+instanceWaitLookup: Task
+lastRun: ''
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: DW JobsAsCode Workflow
+notes:
+- sysId: 997cbfe5b9d44401a8cc23384aa21b55
+  text: Adding Task 9
+  title: 'CR: 1234'
+numberOfTasks: 10
+opswiseGroups:
+- JobAsCode_DemoWorkflow
+overrideCalendar: false
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 0
+runCriteria:
+- businessDay: false
+  complex: true
+  complexAdjective: 2nd
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Business Day
+  complexNouns:
+  - value: Business Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Month
+  complexQualifiers:
+  - value: Month
+  customDay: false
+  customDayChoice:
+  description:
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: 8d8a9bb48e084888adf30ac6a907bf3c
+  task: DW Task5
+  type: Run Criteria
+  variable: false
+  variableName:
+  variableOp: '='
+  variableValue:
+  vertexId: '6'
+- businessDay: false
+  complex: true
+  complexAdjective: Last
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Business Day
+  complexNouns:
+  - value: Business Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Month
+  complexQualifiers:
+  - value: Month
+  customDay: false
+  customDayChoice:
+  description:
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: a0075bb7ef384cea82ee5f60fb6c1cf5
+  task: DW Task4
+  type: Run Criteria
+  variable: false
+  variableName:
+  variableOp: '='
+  variableValue:
+  vertexId: '5'
+runTime: 0
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason:
+stepActions: []
+stepConditions: []
+summary: Updated 7/29
+sysId: 73fa3f2f24ec41c694189ac550399c8d
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+updated: 2025-11-03 14:37:27 -0500
+updatedBy: ops.admin
+userEstimatedDuration:
+variables: []
+version: 51
+virtualResources:
+- amount: 1
+  resource: ALL_JOBS
+  resourceVar:
+  sysId: b2c895c9d44d46968d8d1c9f07450751
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task3
+    value: '4'
+  straightEdge: true
+  targetId:
+    taskName: DW Task9
+    value: '21'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task1
+    value: '2'
+  straightEdge: true
+  targetId:
+    taskName: DW Task2
+    value: '3'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task1
+    value: '2'
+  straightEdge: true
+  targetId:
+    taskName: DW Task3
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task1
+    value: '2'
+  straightEdge: true
+  targetId:
+    taskName: DW Task4
+    value: '5'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task4
+    value: '5'
+  straightEdge: true
+  targetId:
+    taskName: DW Task5
+    value: '6'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task2
+    value: '3'
+  straightEdge: true
+  targetId:
+    taskName: DW Task6
+    value: '7'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task3
+    value: '4'
+  straightEdge: true
+  targetId:
+    taskName: DW Task6
+    value: '7'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task6
+    value: '7'
+  straightEdge: true
+  targetId:
+    taskName: DW Task7
+    value: '8'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task9
+    value: '21'
+  straightEdge: true
+  targetId:
+    taskName: DW Task10
+    value: '22'
+- condition:
+    value: Success
+  sourceId:
+    taskName: DW Task5
+    value: '6'
+  straightEdge: true
+  targetId:
+    taskName: DW Task8
+    value: '9'
+workflowVertices:
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task1
+  vertexId: '2'
+  vertexX: '163'
+  vertexY: '30'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task2
+  vertexId: '3'
+  vertexX: '25'
+  vertexY: '162'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task3
+  vertexId: '4'
+  vertexX: '163'
+  vertexY: '162'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task4
+  vertexId: '5'
+  vertexX: '301'
+  vertexY: '162'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task5
+  vertexId: '6'
+  vertexX: '301'
+  vertexY: '294'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task6
+  vertexId: '7'
+  vertexX: '25'
+  vertexY: '294'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task7
+  vertexId: '8'
+  vertexX: '25'
+  vertexY: '426'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task8
+  vertexId: '9'
+  vertexX: '301'
+  vertexY: '426'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task9
+  vertexId: '21'
+  vertexX: '163'
+  vertexY: '294'
+- alias:
+  conditionExpression:
+  task:
+    value: DW Task10
+  vertexId: '22'
+  vertexX: '163'
+  vertexY: '494'
