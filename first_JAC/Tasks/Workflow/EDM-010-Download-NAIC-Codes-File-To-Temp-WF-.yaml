@@ -59,7 +59,7 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-name: EDM-010-Download-NAIC-Codes-File-To-Temp-WF-
+name: WF_EDM-010-Download-NAIC-Codes-File-To-Temp
 notes:
 - sysId: 8d775b7635ba493782bbc03ced882548
   text: |-
