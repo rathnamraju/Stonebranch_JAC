@@ -1,0 +1,17 @@
+content: |-
+  @Echo off
+  SET AWS_ACCESS_KEY_ID=${AWS_BUCKET_ACCESS_KEY}
+  SET AWS_SECRET_ACCESS_KEY=${AWS_BUCKET_SECRET_KEY}
+  SET AWS_DEFAULT_REGION=${AWS_BUCKET_REGION}
+  aws s3 mv s3://${AWS_BUCKET_NAME}${AWS_Bucket_Directory} ${Server_Root}${Temp_Folder_Location}  --recursive --exclude "*" --include "*%{File_Pattern}*"  --exclude "*/*"
+description:
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: Template-Download-Files-S3-To-Temp-SCR45
+scriptType: Script
+sysId: e640eca9af2d3c2488b1a42d55facf9c
+version: 1
