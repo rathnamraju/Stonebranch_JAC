@@ -1,0 +1,307 @@
+type: taskWorkflow
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+calculateCp: false
+calendar:
+cpDuration:
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customChoiceField1:
+  label:
+  value:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_task_workflow
+firstRun: ''
+holdResources: false
+instanceWait: -- None --
+instanceWaitLookup: Task
+lastRun: ''
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: Clarity-020-Balance-Sheet-Upload-To-S3-WF-
+notes:
+- sysId: 931634c582284cbda63da182e53af98c
+  text: |-
+    <Object typeid="Reference">
+        <ID>8693437</ID>
+        <RID>3</RID>
+        <ClassID>39</ClassID>
+        <Label>Clarity-020-Balance-Sheet-Upload-To-S3</Label>
+        <Name>Clarity-020-Balance-Sheet-Upload-To-S3</Name>
+        <PID typeid="ObjectID">
+            <ID>8693402</ID>
+        </PID>
+        <Enabled>1</Enabled>
+        <GlobalDisable>0</GlobalDisable>
+        <Visibility>127</Visibility>
+        <Owner>LM\a1518942</Owner>
+        <Flags>8</Flags>
+        <Status>0</Status>
+        <OperationDateTime>0001-01-01T00:00:00</OperationDateTime>
+        <LockIsExclusive>0</LockIsExclusive>
+        <LockMode>0</LockMode>
+        <LockOperation>0</LockOperation>
+        <LockOwner/>
+        <LockFlags/>
+        <Guid>975ccec7-ddec-455c-b6d9-0e8e1ee774db</Guid>
+        <Client/>
+        <Creator>LM\a1518942</Creator>
+        <CreationTime>2024-08-29T16:20:31</CreationTime>
+        <Description>(Update for Enhanced Data Encryption).</Description>
+        <ReadOnly>0</ReadOnly>
+        <RevisionAuthor>LM\a1562271</RevisionAuthor>
+        <RevisionTime>2025-02-24T21:39:35</RevisionTime>
+        <EventFilter>1966083;</EventFilter>
+        <Documentation typeid="DocumentationProperties"/>
+        <Properties typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>Extensions</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="12" typeid="Variable">
+                        <Name>SLASettings</Name>
+                        <Value typeid="VariableCollection"/>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>$ImportedSymbols</Name>
+                <Value/>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>UseBusinessDaySemantics</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>Preprocessing.Strict</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>Preprocessing.InheritVariables</Name>
+                <Value>0</Value>
+            </Variable>
+        </Properties>
+        <Tags typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>V4_DateTimeEvent</Name>
+                <Value typeid="DateTimeEvent">
+                    <ID typeid="ObjectID">
+                        <ID>8693438</ID>
+                        <RID>2</RID>
+                        <Label>DateTime</Label>
+                        <Name>DateTime</Name>
+                        <Path>/</Path>
+                    </ID>
+                    <PID typeid="ObjectID">
+                        <ID>8693437</ID>
+                        <RID>2</RID>
+                        <ClassID>39</ClassID>
+                        <Label>Clarity-020-Balance-Sheet-Upload-To-S3</Label>
+                        <Name>Clarity-020-Balance-Sheet-Upload-To-S3</Name>
+                        <Path>/PROD/SCD/Inbound/Voyager/Plans/Clarity-Balance-Sheet-Inbound-to-Snowflake</Path>
+                    </PID>
+                    <Attached>1</Attached>
+                    <Enabled>1</Enabled>
+                    <EventID>1966083</EventID>
+                    <Properties typeid="VariableCollection"/>
+                    <Actions typeid="EventActionCollection">
+                        <Count>1</Count>
+                        <EventAction typeid="EventAction">
+                            <CommandID>196609</CommandID>
+                            <CommandArgument/>
+                        </EventAction>
+                    </Actions>
+                    <V4Tag>0</V4Tag>
+                    <Type>4</Type>
+                    <DeferredUntil>2015-09-23T13:58:41</DeferredUntil>
+                    <Interval>36000000000</Interval>
+                    <IntervalOrigin>2020-10-08T19:52:56</IntervalOrigin>
+                    <ComputeIntervalWithDelta>0</ComputeIntervalWithDelta>
+                    <RunLastMissedExecution>1</RunLastMissedExecution>
+                    <OnNonBusinessDayAction>3</OnNonBusinessDayAction>
+                    <TimeZoneType>1</TimeZoneType>
+                    <ConstraintProperties typeid="ConstraintSchedulingProperties">
+                        <EarliestTimeEnabled>0</EarliestTimeEnabled>
+                        <EarliestTime>1900-01-01T00:00:00</EarliestTime>
+                        <LatestTimeEnabled>0</LatestTimeEnabled>
+                        <LatestTime>1900-01-01T23:59:00</LatestTime>
+                        <SpanBusinessDay>1</SpanBusinessDay>
+                    </ConstraintProperties>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>V4_Constraint</Name>
+                <Value typeid="Constraint">
+                    <PID typeid="ObjectID">
+                        <ID>8693437</ID>
+                        <RID>1</RID>
+                        <ClassID>39</ClassID>
+                        <Label>Clarity-020-Balance-Sheet-Upload-To-S3</Label>
+                        <Name>Clarity-020-Balance-Sheet-Upload-To-S3</Name>
+                        <Path>/</Path>
+                    </PID>
+                    <RID>2</RID>
+                    <Expression/>
+                    <FailureAction>1</FailureAction>
+                    <RetryInterval>600000000</RetryInterval>
+                    <RetryLimit>5</RetryLimit>
+                    <V4WaitValues>2832337658315008</V4WaitValues>
+                    <Variables typeid="VariableCollection"/>
+                </Value>
+            </Variable>
+            <Variable t="2" typeid="Variable">
+                <Name>GrantedAccess</Name>
+                <Value>-1</Value>
+            </Variable>
+        </Tags>
+        <Variables typeid="VariableCollection">
+            <Variable a="1" t="1" typeid="Variable">
+                <Name>in_file_location</Name>
+                <Value>\\lmginv.com\ftp\ActiveBatch_Transfer\GEAC_temp\GAAP\Inbound\withheader\balancesheet\</Value>
+            </Variable>
+            <Variable a="1" t="1" typeid="Variable">
+                <Name>S3_Subfolder</Name>
+                <Value>/inbound/clarity/balancesheet/</Value>
+            </Variable>
+        </Variables>
+        <SecurityAccounts typeid="SecurityAccountCollection">
+            <Dirty>0</Dirty>
+            <Count>2</Count>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Authenticated Users</Name>
+                <Permission>70</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Administrators</Name>
+                <Permission>-1</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+        </SecurityAccounts>
+        <Target typeid="ObjectID">
+            <ID>8687213</ID>
+        </Target>
+        <SecurityDescriptor>AQAEgLwAAADYAAAAAAAAABQAAAACAKgAAgAAAAAAFABGAAAAAQEAAAAAAAULAAAAAAAYAP////8BAgAAAAAABSAAAAAgAgAAAAAAAAAAAAABAAAAAQAAABkAAAAYAAAAAwAAAAMAAABAAAAAAAAAAAAAAAAQRcQ3yAEAAAAAAAAAAAAAAAAAAAAAAABwx8c3yAEAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAFQAAAAAAAAABBQAAAAAABRUAAACdQgFO7AIYamkrf0YQ81oAAQIAAAAAAAUgAAAAIAIAAHMAYwBpAC4AQQBjAHQAaQB2AGUA</SecurityDescriptor>
+        <TagNames typeid="TagCollection"/>
+    </Object>
+  title: Conversion Source
+numberOfTasks: 1
+opswiseGroups: []
+overrideCalendar: false
+overrideInstanceWait: "No"
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 0
+runCriteria: []
+runTime: 0
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason:
+stepActions: []
+stepConditions: []
+summary: shell reference
+sysId: 479ffb34bad24f8dbd4e196dfe55462f
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Extensions
+  options: []
+  required: false
+  sysId: 5c5c64b82e73452c897142d9b5610932
+  value: SLASettings
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Preprocessing_InheritVariables
+  options: []
+  required: false
+  sysId: c831414fabfb4bc98272cf110c734d67
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Preprocessing_Strict
+  options: []
+  required: false
+  sysId: 4fef0dab952c4cc98e580784daf1ed38
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: UseBusinessDaySemantics
+  options: []
+  required: false
+  sysId: afc4ed5e4b134d11af154c1f65058c75
+  value: '0'
+version: 1
+virtualResources: []
+workflowEdges: []
+workflowVertices:
+- alias:
+  conditionExpression:
+  task:
+    value: Template-Upload-Files-Temp-To-S3_#2
+  vertexId: '5000'
+  vertexX: '241.5'
+  vertexY: '89.0'
