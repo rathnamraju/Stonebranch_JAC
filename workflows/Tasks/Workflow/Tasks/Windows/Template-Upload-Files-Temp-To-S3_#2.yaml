@@ -1,0 +1,728 @@
+type: taskWindows
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent:
+agentCluster:
+agentClusterVar:
+agentVar: ${Cloud_Gen_Que}
+broadcastCluster:
+broadcastClusterVar:
+command:
+commandOrScript: Script
+cpDuration:
+cpDurationUnit: Minutes
+createConsole: false
+credentials: invest\svc_activebatch
+credentialsVar:
+customChoiceField1:
+  label:
+  value:
+customField1:
+  label:
+  value:
+customField2:
+  label:
+  value:
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration:
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput:
+exitCodeProcessing: Success Exitcode Range
+exitCodeText:
+exitCodes: '0'
+exportReleaseLevel: 7.9.2.0
+exportTable: ops_task_windows
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration:
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: Template-Upload-Files-Temp-To-S3_#2
+notes:
+- sysId: b495a5f6680d40f09809790d1782741c
+  text: |-
+    <Object typeid="Job">
+        <ID>8687213</ID>
+        <RID>1</RID>
+        <ClassID>3</ClassID>
+        <Label>Template-Upload-Files-Temp-To-S3</Label>
+        <Name>Template-Upload-Files-Temp-To-S3</Name>
+        <PID typeid="ObjectID">
+            <ID>4689766</ID>
+        </PID>
+        <Enabled>1</Enabled>
+        <GlobalDisable>0</GlobalDisable>
+        <Visibility>127</Visibility>
+        <Owner>LM\a1536575</Owner>
+        <Flags>8</Flags>
+        <Status>0</Status>
+        <OperationDateTime>0001-01-01T00:00:00</OperationDateTime>
+        <LockIsExclusive>0</LockIsExclusive>
+        <LockMode>0</LockMode>
+        <LockOperation>0</LockOperation>
+        <LockOwner/>
+        <LockFlags/>
+        <Guid>2217c63b-f765-4220-82c4-28634afde465</Guid>
+        <Client>INVCTXAPP03</Client>
+        <Creator>LM\a1536575</Creator>
+        <CreationTime>2024-08-28T21:22:27</CreationTime>
+        <Description>(Update for Enhanced Data Encryption).</Description>
+        <ReadOnly>0</ReadOnly>
+        <RevisionAuthor>LM\n1654501</RevisionAuthor>
+        <RevisionTime>2024-08-28T21:22:28</RevisionTime>
+        <EventFilter/>
+        <Documentation typeid="DocumentationProperties"/>
+        <Properties typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>ProcessJob</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="1" typeid="Variable">
+                        <Name>SuccessCodeRule</Name>
+                        <Value>100</Value>
+                    </Variable>
+                    <Variable t="1" typeid="Variable">
+                        <Name>EncodedSuccessCodeRule</Name>
+                        <Value>100;</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Interactive</Name>
+                        <Value>0</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>PreJobEnabled</Name>
+                        <Value>0</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>PostJobEnabled</Name>
+                        <Value>0</Value>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>Extensions</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="12" typeid="Variable">
+                        <Name>SLASettings</Name>
+                        <Value typeid="VariableCollection"/>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>$ImportedSymbols</Name>
+                <Value>AWS_SCD_BUCKET_ACCESS_KEY;AWS_SCD_BUCKET_SECRET_KEY;AWS_SCD_BUCKET_REGION;in_file_location;AWS_SCD_BUCKET_NAME;S3_Subfolder</Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>Execution</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="2" typeid="Variable">
+                        <Name>CpuPlatform</Name>
+                        <Value>1</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Log.Append</Name>
+                        <Value>0</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Log.Statistics</Name>
+                        <Value>1</Value>
+                    </Variable>
+                    <Variable t="3" typeid="Variable">
+                        <Name>Log.Archive</Name>
+                        <Value>0</Value>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>InterpretExitCode</Name>
+                <Value>0</Value>
+            </Variable>
+            <Variable t="1" typeid="Variable">
+                <Name>$Type</Name>
+                <Value>ActiveBatch.ScriptLibraryJobProperties</Value>
+            </Variable>
+            <Variable t="2" typeid="Variable">
+                <Name>#PID</Name>
+                <Value>6956597</Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>Steps</Name>
+                <Value typeid="VariableCollection">
+                    <Variable t="12" typeid="Variable">
+                        <Value typeid="VariableCollection">
+                            <Variable t="12" typeid="Variable">
+                                <Name>$Library</Name>
+                                <Value typeid="ObjectID">
+                                    <ID>601</ID>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>$Type</Name>
+                                <Value>Abat.Jobs.General.EmbeddedScript</Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>$ReferencedLibraries</Name>
+                                <Value typeid="ObjectIDCollection">
+                                    <Count>0</Count>
+                                </Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Extension</Name>
+                                <Value>.bat</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Script</Name>
+                                <Value>@Echo off
+    SET aws_access_key_id=${AWS_SCD_BUCKET_ACCESS_KEY}
+    SET aws_secret_access_key=${AWS_SCD_BUCKET_SECRET_KEY}
+    SET region=${AWS_SCD_BUCKET_REGION}
+    SET output text
+    @echo ON
+
+    aws s3 mv ${in_file_location} s3://${AWS_SCD_BUCKET_NAME}${S3_Subfolder} --recursive</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Parameters</Name>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>SuccessCodeRule</Name>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>TerminateChildProcesses</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>InteractiveMode</Name>
+                                <Value>0</Value>
+                            </Variable>
+                            <Variable t="2" typeid="Variable">
+                                <Name>ErrorAction</Name>
+                                <Value>2</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>JobStepComment</Name>
+                                <Value/>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Name</Name>
+                                <Value>EmbeddedScript</Value>
+                            </Variable>
+                            <Variable t="1" typeid="Variable">
+                                <Name>Enabled</Name>
+                                <Value>1</Value>
+                            </Variable>
+                            <Variable typeid="Variable">
+                                <Name>Properties</Name>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Values</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.NameValueCollection</Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                            <Variable t="12" typeid="Variable">
+                                <Name>Bindings</Name>
+                                <Value typeid="VariableCollection">
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>$Type</Name>
+                                        <Value>Asci.ActiveBatch.ComponentModel.ObjectBindingCollection</Value>
+                                    </Variable>
+                                    <Variable t="1" typeid="Variable">
+                                        <Name>Data</Name>
+                                        <Value>&lt;ObjectBindingCollection xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.activebatch.com/2008/10/01/ComponentModel"&gt;&lt;ObjectBinding i:type="TextBinding"&gt;&lt;Path&gt;Script&lt;/Path&gt;&lt;Value&gt;@Echo off
+    SET aws_access_key_id=${AWS_SCD_BUCKET_ACCESS_KEY}
+    SET aws_secret_access_key=${AWS_SCD_BUCKET_SECRET_KEY}
+    SET region=${AWS_SCD_BUCKET_REGION}
+    SET output text
+    @echo ON
+
+    aws s3 mv ${in_file_location} s3://${AWS_SCD_BUCKET_NAME}${S3_Subfolder} --recursive&lt;/Value&gt;&lt;/ObjectBinding&gt;&lt;/ObjectBindingCollection&gt;</Value>
+                                    </Variable>
+                                    <Variable t="12" typeid="Variable">
+                                        <Name>Items</Name>
+                                        <Value typeid="VariableCollection">
+                                            <Variable t="12" typeid="Variable">
+                                                <Value typeid="VariableCollection">
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>$Type</Name>
+                                                        <Value>Asci.ActiveBatch.ComponentModel.TextBinding</Value>
+                                                    </Variable>
+                                                    <Variable t="12" typeid="Variable">
+                                                        <Name>$ReferencedLibraries</Name>
+                                                        <Value typeid="ObjectIDCollection">
+                                                            <Count>0</Count>
+                                                        </Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Path</Name>
+                                                        <Value>Script</Value>
+                                                    </Variable>
+                                                    <Variable t="1" typeid="Variable">
+                                                        <Name>Value</Name>
+                                                        <Value>@Echo off
+    SET aws_access_key_id=${AWS_SCD_BUCKET_ACCESS_KEY}
+    SET aws_secret_access_key=${AWS_SCD_BUCKET_SECRET_KEY}
+    SET region=${AWS_SCD_BUCKET_REGION}
+    SET output text
+    @echo ON
+
+    aws s3 mv ${in_file_location} s3://${AWS_SCD_BUCKET_NAME}${S3_Subfolder} --recursive</Value>
+                                                    </Variable>
+                                                </Value>
+                                            </Variable>
+                                        </Value>
+                                    </Variable>
+                                </Value>
+                            </Variable>
+                        </Value>
+                    </Variable>
+                    <Variable t="1" typeid="Variable">
+                        <Name>JobStepComment</Name>
+                        <Value/>
+                    </Variable>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>$ReferencedLibraries</Name>
+                <Value typeid="ObjectIDCollection">
+                    <Count>1</Count>
+                    <ObjectID typeid="ObjectID">
+                        <ID>601</ID>
+                    </ObjectID>
+                </Value>
+            </Variable>
+            <Variable t="3" typeid="Variable">
+                <Name>Preprocessing.Strict</Name>
+                <Value>0</Value>
+            </Variable>
+        </Properties>
+        <Tags typeid="VariableCollection">
+            <Variable t="12" typeid="Variable">
+                <Name>V4_DateTimeEvent</Name>
+                <Value typeid="DateTimeEvent">
+                    <ID typeid="ObjectID"/>
+                    <PID typeid="ObjectID"/>
+                    <Attached>1</Attached>
+                    <Enabled>1</Enabled>
+                    <EventID>1966083</EventID>
+                    <Properties typeid="VariableCollection"/>
+                    <Actions typeid="EventActionCollection">
+                        <Count>1</Count>
+                        <EventAction typeid="EventAction">
+                            <CommandID>196609</CommandID>
+                            <CommandArgument/>
+                        </EventAction>
+                    </Actions>
+                    <V4Tag>0</V4Tag>
+                    <Type>4</Type>
+                    <DeferredUntil>2015-09-23T13:38:27</DeferredUntil>
+                    <Interval>36000000000</Interval>
+                    <IntervalOrigin>2019-09-26T15:26:52</IntervalOrigin>
+                    <ComputeIntervalWithDelta>0</ComputeIntervalWithDelta>
+                    <RunLastMissedExecution>1</RunLastMissedExecution>
+                    <OnNonBusinessDayAction>3</OnNonBusinessDayAction>
+                    <TimeZoneType>1</TimeZoneType>
+                    <ConstraintProperties typeid="ConstraintSchedulingProperties">
+                        <EarliestTimeEnabled>0</EarliestTimeEnabled>
+                        <EarliestTime>1900-01-01T00:00:00</EarliestTime>
+                        <LatestTimeEnabled>0</LatestTimeEnabled>
+                        <LatestTime>1900-01-01T00:00:00</LatestTime>
+                        <SpanBusinessDay>1</SpanBusinessDay>
+                    </ConstraintProperties>
+                </Value>
+            </Variable>
+            <Variable t="12" typeid="Variable">
+                <Name>V4_Constraint</Name>
+                <Value typeid="Constraint">
+                    <PID typeid="ObjectID">
+                        <RID>1</RID>
+                        <ClassID>3</ClassID>
+                        <Label>Template-Upload-Files-Temp-To-S3</Label>
+                        <Name>Template-Upload-Files-Temp-To-S3</Name>
+                    </PID>
+                    <RID>2</RID>
+                    <Expression/>
+                    <FailureAction>1</FailureAction>
+                    <RetryInterval>600000000</RetryInterval>
+                    <RetryLimit>5</RetryLimit>
+                    <V4WaitValues>2832337658315008</V4WaitValues>
+                    <Variables typeid="VariableCollection"/>
+                </Value>
+            </Variable>
+            <Variable t="2" typeid="Variable">
+                <Name>GrantedAccess</Name>
+                <Value>-1</Value>
+            </Variable>
+        </Tags>
+        <Variables typeid="VariableCollection"/>
+        <SecurityAccounts typeid="SecurityAccountCollection">
+            <Dirty>0</Dirty>
+            <Count>2</Count>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Administrators</Name>
+                <Permission>-1</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+            <SecurityAccount typeid="SecurityAccount">
+                <Name>Authenticated Users</Name>
+                <Permission>6</Permission>
+                <PermissionType>1</PermissionType>
+            </SecurityAccount>
+        </SecurityAccounts>
+        <Type>6</Type>
+        <Logging typeid="LoggingProperties">
+            <Enabled>1</Enabled>
+            <CentrallyManaged>1</CentrallyManaged>
+            <LogFileName>ADX I Download File.log</LogFileName>
+            <ErrorLogFileEnabled>0</ErrorLogFileEnabled>
+            <ErrorLogFileName/>
+            <ReuseLogFile>0</ReuseLogFile>
+            <LogRetentionEnabled>1</LogRetentionEnabled>
+            <LogRetentionPeriod>30</LogRetentionPeriod>
+        </Logging>
+        <Execution typeid="JobExecutionProperties">
+            <MaximumActiveInstances>2</MaximumActiveInstances>
+            <OnActiveAction>1</OnActiveAction>
+            <OnActiveWaitDuration>0</OnActiveWaitDuration>
+            <OnMaxActiveInstancesAction>1</OnMaxActiveInstancesAction>
+            <AllowDeferredExecution>0</AllowDeferredExecution>
+            <OsPriority>Normal</OsPriority>
+            <CredentialType>1</CredentialType>
+            <UserAccount typeid="ObjectID">
+                <ID>1196</ID>
+            </UserAccount>
+            <UserName/>
+            <EncryptedPassword/>
+            <WorkingDirectory/>
+            <LoadUserProfile>1</LoadUserProfile>
+            <ProcessorMask>-1</ProcessorMask>
+            <ProcessorMaskEnabled>0</ProcessorMaskEnabled>
+            <TestPendingChanges>0</TestPendingChanges>
+        </Execution>
+        <Submission typeid="QueueSubmissionProperties">
+            <Modified>0</Modified>
+            <Queue typeid="ObjectID">
+                <ID>839056</ID>
+            </Queue>
+            <Priority>10</Priority>
+            <SelectionMethod>1</SelectionMethod>
+            <MaximumDispatchDelay>0</MaximumDispatchDelay>
+            <MachineCharacteristics typeid="VariableCollection"/>
+            <UserCharacteristics typeid="VariableCollection"/>
+        </Submission>
+        <Completion typeid="JobCompletionProperties">
+            <DisableAfterFirstRun>0</DisableAfterFirstRun>
+            <KeepInstancesOnQueue>0</KeepInstancesOnQueue>
+            <HistoryRetentionEnabled>1</HistoryRetentionEnabled>
+            <HistoryRetentionPeriod>30</HistoryRetentionPeriod>
+            <OnFailureAction>1</OnFailureAction>
+            <MaximumRestarts>0</MaximumRestarts>
+            <RestartInterval>600000000</RestartInterval>
+            <RestartPreprocessing>0</RestartPreprocessing>
+            <OnMachineFailureAction>1</OnMachineFailureAction>
+        </Completion>
+        <CpuTimeMonitor typeid="MonitoringProperties">
+            <Modified>1</Modified>
+            <Enabled>0</Enabled>
+            <ExpectedTime>0</ExpectedTime>
+            <UseAverageTime>1</UseAverageTime>
+            <DeltaTimeType>1</DeltaTimeType>
+            <DeltaTime>0</DeltaTime>
+            <DeltaTimePercentage>10</DeltaTimePercentage>
+            <AbortOnTimeOverrun>0</AbortOnTimeOverrun>
+            <FailOnTimeUnderrun>0</FailOnTimeUnderrun>
+        </CpuTimeMonitor>
+        <RunTimeMonitor typeid="MonitoringProperties">
+            <Modified>1</Modified>
+            <Enabled>1</Enabled>
+            <ExpectedTime>0</ExpectedTime>
+            <UseAverageTime>1</UseAverageTime>
+            <DeltaTimeType>1</DeltaTimeType>
+            <DeltaTime>0</DeltaTime>
+            <DeltaTimePercentage>50</DeltaTimePercentage>
+            <AbortOnTimeOverrun>1</AbortOnTimeOverrun>
+            <FailOnTimeUnderrun>0</FailOnTimeUnderrun>
+        </RunTimeMonitor>
+        <SecurityDescriptor>AQAEgLwAAADYAAAAAAAAABQAAAACAKgAAgAAAAAAGAD/////AQIAAAAAAAUgAAAAIAIAAAAAFAAGAAAAAQEAAAAAAAULAAAAbtY2YbFMRzrLXAK5855gZWBLxPranHKVFF0qDm/85ADyO62HCGJl1ujlvSLQOIiaAoLK2NTxOOPKhJ6LC5pvhrwAMStiSlhGcHI1WDRYb29lUFFUMGJxbzNXdU83UWh3c05RVElHaFoAAAAAdAAAAGUAZQABBQAAAAAABRUAAACdQgFO7AIYamkrf0YsF10AAQIAAAAAAAUgAAAAIAIAAHMAYwBpAC4AQQBjAHQAaQB2AGUA</SecurityDescriptor>
+        <TagNames typeid="TagCollection"/>
+    </Object>
+  title: Source
+opswiseGroups:
+- LM\a1536575
+outputFailureOnly: false
+outputReturnFile:
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText:
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: "No"
+parameters:
+resPriority: 10
+resPriorityVar:
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes:
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir:
+script: Template-Upload-Files-Temp-To-S3_#2-SCR24
+simulation: false
+startHeld: false
+startHeldReason:
+summary: type6
+sysId: 01d0003fbea54ea8a0f0c70070f9eec2
+timeZonePref: -- System Default --
+twDelayAmount:
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount:
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+userEstimatedDuration:
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: CpuPlatform
+  options: []
+  required: false
+  sysId: cce928bb73a8438e947b9941b8f3b623
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Enabled
+  options: []
+  required: false
+  sysId: d6e4b1c3f63b4e3ea8e5a36d2b869489
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: EncodedSuccessCodeRule
+  options: []
+  required: false
+  sysId: 303ce74cd52640c3b1d4597ae2d7d5a6
+  value: 100;
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ErrorAction
+  options: []
+  required: false
+  sysId: 6d7f522f3b784978b56ad1c0589d0313
+  value: '2'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Extension
+  options: []
+  required: false
+  sysId: 3dacefc6e3d64359ac3678dc37c86149
+  value: .bat
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Extensions
+  options: []
+  required: false
+  sysId: 45aa4a9cf6d5427291dbae86973568ce
+  value: SLASettings
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ImportedSymbols
+  options: []
+  required: false
+  sysId: f9a61de4058541bf8e51b0b9d0b73e3a
+  value: 
+    AWS_SCD_BUCKET_ACCESS_KEY;AWS_SCD_BUCKET_SECRET_KEY;AWS_SCD_BUCKET_REGION;in_file_location;AWS_SCD_BUCKET_NAME;S3_Subfolder
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Interactive
+  options: []
+  required: false
+  sysId: c07a19d5d1ad4f65b4bf62e92e4b1f1b
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: InteractiveMode
+  options: []
+  required: false
+  sysId: b50a812638794abfa68cd0fd4aecbd8a
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: InterpretExitCode
+  options: []
+  required: false
+  sysId: 7478368a391f4a84ab21b5ee503f95db
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Library
+  options: []
+  required: false
+  sysId: c7010fde38334d038967ebc67ed7213b
+  value: '601'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Log_Append
+  options: []
+  required: false
+  sysId: 7423926b4fa24096b4b8daaa74810224
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Log_Archive
+  options: []
+  required: false
+  sysId: 67d4470faf494d288b9fed173135878a
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Log_Statistics
+  options: []
+  required: false
+  sysId: 21546388e3ab49fbb0034eea32c21df6
+  value: '1'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Name
+  options: []
+  required: false
+  sysId: c1f5908be1264560a3a28ba930c75f8a
+  value: EmbeddedScript
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Path
+  options: []
+  required: false
+  sysId: 74d0c915389a41f5ab110456c55f0fd1
+  value: Script
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: PID
+  options: []
+  required: false
+  sysId: 6f5ef8867e9840ffb741ecddf51721c5
+  value: '6956597'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: PostJobEnabled
+  options: []
+  required: false
+  sysId: b60b4073e9154b028ac3cb80a55da8df
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: PreJobEnabled
+  options: []
+  required: false
+  sysId: 3f9cbc7ccc4b45a481ea0334f8509775
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Preprocessing_Strict
+  options: []
+  required: false
+  sysId: f86e67c740be4d79abedabe1947a9c25
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: ReferencedLibraries
+  options: []
+  required: false
+  sysId: 2946b1410f73426a859fdf3fd8b30b53
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: SuccessCodeRule
+  options: []
+  required: false
+  sysId: c8c643a0332240b8aad23ec88dcb0fca
+  value: '100'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: TerminateChildProcesses
+  options: []
+  required: false
+  sysId: 189905d1420b49d697689c3502fe4211
+  value: '0'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description:
+  name: Type
+  options: []
+  required: false
+  sysId: 80a149e086154e979210a21ff23d529c
+  value: ActiveBatch.ScriptLibraryJobProperties
+version: 1
+virtualResources: []
+waitForOutput: false
