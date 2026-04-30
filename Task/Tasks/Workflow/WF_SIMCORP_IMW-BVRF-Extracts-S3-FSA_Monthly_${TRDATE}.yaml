@@ -6,24 +6,24 @@ actions:
   snmpNotifications: []
   systemOperations: []
 calculateCp: false
-calendar: 
-cpDuration: 
+calendar:
+cpDuration:
 cpDurationUnit: Minutes
 criticalEndpoints: []
 customChoiceField1:
-  label: 
-  value: 
+  label:
+  value:
 customField1:
-  label: 
-  value: 
+  label:
+  value:
 customField2:
-  label: 
-  value: 
+  label:
+  value:
 efDayConstraint: None
 efDuration: 00:00:00:00
 efEnabled: false
 efNthAmount: 5
-efOffsetDuration: 
+efOffsetDuration:
 efOffsetDurationUnit: Minutes
 efOffsetPercentage: 0
 efOffsetType: Percentage
@@ -45,7 +45,7 @@ lfDayConstraint: None
 lfDuration: 00:00:00:00
 lfEnabled: false
 lfNthAmount: 5
-lfOffsetDuration: 
+lfOffsetDuration:
 lfOffsetDurationUnit: Minutes
 lfOffsetPercentage: 0
 lfOffsetType: Percentage
@@ -66,13 +66,13 @@ opswiseGroups: []
 overrideCalendar: false
 overrideInstanceWait: "No"
 resPriority: 10
-resPriorityVar: 
+resPriorityVar:
 resolveNameImmediately: false
 restrictionPeriod: None
-restrictionPeriodAfterDate: 
-restrictionPeriodAfterTime: 
-restrictionPeriodBeforeDate: 
-restrictionPeriodBeforeTime: 
+restrictionPeriodAfterDate:
+restrictionPeriodAfterTime:
+restrictionPeriodBeforeDate:
+restrictionPeriodBeforeTime:
 restrictionPeriodDateList: []
 retainSysIds: true
 runCount: 0
@@ -81,34 +81,34 @@ runTime: 0
 simulation: false
 skippedOption: Show Skipped
 startHeld: false
-startHeldReason: 
+startHeldReason:
 stepActions: []
 stepConditions: []
 summary: /PROD/SCD/Outbound/IMW/Plan/IMW-BVRF-Extracts-Move-To-S3-FSA
 sysId: bd7f91431cd6dc1601258b76f309a5a4
 timeZonePref: -- System Default --
-twDelayAmount: 
+twDelayAmount:
 twDelayDuration: 00:00:00:00
 twDelayType: None
-twWaitAmount: 
+twWaitAmount:
 twWaitDayConstraint: None
 twWaitDuration: 00:00:00:00
 twWaitTime: 00:00
 twWaitType: None
 twWorkflowOnly: -- System Default --
-userEstimatedDuration: 
+userEstimatedDuration:
 variables:
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
-  name: Scd_Sftp_Folder_Location
+  description:
+  name: Scd_Sftp_Folder_Location             
   options: []
   required: false
   sysId: 8d4e9b1f6a7c2e53a90d8c24f5e1abcg
   value: /ActiveData/Interfaces/Out/SFTP/IMW/BVRFRpt/Outgoing
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Temp_Folder_Location
   options: []
   required: false
@@ -116,7 +116,7 @@ variables:
   value: outbound\imw\BVRFRpt
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: File_String
   options: []
   required: false
@@ -124,7 +124,7 @@ variables:
   value: IMW_BVRF_REPORT
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: File_type
   options: []
   required: false
@@ -132,7 +132,7 @@ variables:
   value: csv
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Aws_Bucket_Subfolder
   options: []
   required: false
@@ -140,7 +140,7 @@ variables:
   value: /bvrfrpt/
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Aws_Bucket_Subfolder_Archive
   options: []
   required: false
@@ -148,7 +148,7 @@ variables:
   value: /archive/bvrfrpt/
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Dataset_Name
   options: []
   required: false
@@ -156,7 +156,7 @@ variables:
   value: '''bvrfrpt'''
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Num_Days_to_Archive
   options: []
   required: false
@@ -164,7 +164,7 @@ variables:
   value: '365'
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Column_Naming_Function
   options: []
   required: false
@@ -172,7 +172,7 @@ variables:
   value: UDF_AF_VALIDATE_COLUMN_NAMING_SPE
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: FOLDER
   options: []
   required: false
@@ -180,7 +180,7 @@ variables:
   value: e0c6e6b509854ca136848eec34e1cc85
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Snow_Stage
   options: []
   required: false
@@ -188,7 +188,7 @@ variables:
   value: STG_S3_LMI_FSA_SCD_POWERBI_REPORT_INBOUND
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Snow_Stage_Result
   options: []
   required: false
@@ -196,7 +196,7 @@ variables:
   value: STG_S3_LMI_FSA_SCD_POWERBI_REPORT_OUTBOUND
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Snowflake_Result_File_Pattern
   options: []
   required: false
@@ -204,7 +204,7 @@ variables:
   value: IMW_TAX_BVRF_REPORT
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: ARCHIVE_FOLDER
   options: []
   required: false
@@ -212,7 +212,7 @@ variables:
   value: 38c6e6b51b6f1fd8635c04bab9f955a5
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Snowflake_Database
   options: []
   required: false
@@ -220,7 +220,7 @@ variables:
   value: PROD_LMI_FSA
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: SNOWFLAKE_STAGING_DATABASE
   options: []
   required: false
@@ -228,7 +228,7 @@ variables:
   value: PROD_LMI_FSA
 - allowEmptyOption: false
   allowUnlistedOption: false
-  description: 
+  description:
   name: Snowflake_Schema
   options: []
   required: false
