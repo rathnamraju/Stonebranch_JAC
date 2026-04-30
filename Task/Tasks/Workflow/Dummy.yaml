@@ -1,0 +1,46 @@
+type: workflow
+name: WF_SIMCORP_IMW-BVRF-Extracts-S3-FSA_Monthly
+description: /PROD/SCD/Outbound/IMW/Plan/IMW-BVRF-Extracts-Move-To-S3-FSA
+
+calendar: null
+timeZonePref: -- System Default --
+startHeld: false
+logLevel: Inherited
+resPriority: 10
+retainSysIds: false
+
+variables:
+  - name: Scd_Sftp_Folder_Location
+    value: /ActiveData/Interfaces/Out/SFTP/IMW/BVRFRpt/Outgoing
+
+  - name: Temp_Folder_Location
+    value: outbound/imw/BVRFRpt
+
+  - name: File_String
+    value: IMW_BVRF_REPORT
+
+  - name: File_type
+    value: csv
+
+  - name: Aws_Bucket_Subfolder
+    value: /bvrfrpt/
+
+  - name: Aws_Bucket_Subfolder_Archive
+    value: /archive/bvrfrpt/
+
+  - name: Dataset_Name
+    value: bvrfrpt
+
+  - name: Num_Days_to_Archive
+    value: "365"
+
+workflowVertices:
+  - id: start_task
+    name: START_TASK
+    type: task
+    taskName: DUMMY_START_TASK
+    x: 100
+    y: 100
+
+workflowEdges: []
+``
