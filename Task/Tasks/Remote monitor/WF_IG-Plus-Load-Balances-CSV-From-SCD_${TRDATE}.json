@@ -38,7 +38,7 @@
   "exclusiveTasks": [],
   "exclusiveWithSelf": false,
   "executionRestriction": "None",
-  "exportReleaseLevel": "7.9.2.0,
+  "exportReleaseLevel": "7.9.2.0",
   "exportTable": "ops_task_workflow",
   "firstRun": "",
   "holdResources": false,
